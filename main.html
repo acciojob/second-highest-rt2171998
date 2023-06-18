@@ -10,7 +10,15 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			
+			let max=0;
+			let maxsex=0;
+			for(let i=0;i<arr.length;i++){
+				if(arr[i]>max){
+					maxsex=max;
+					max=arr[i];
+				}
+			}
+			return maxsex
 		}
 
 		function Main() {
